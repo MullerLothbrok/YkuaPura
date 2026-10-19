@@ -8,9 +8,10 @@
   <meta property="og:title" content="YkuaPura — Agua pura al instante" />
   <meta property="og:description" content="Recarga autoservice de agua purificada, disponible 24 horas en puntos seleccionados." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/IMG_6370.webp" />
+  <meta property="og:image" content="https://ykua-pura.vercel.app/assets/04-portada.webp" />
   <title>YkuaPura | Agua pura al instante</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="updates-octubre.css" />
   <script defer src="script.js"></script>
 </head>
 <body>
@@ -26,6 +27,7 @@
       <nav class="nav-links" aria-label="Navegación principal">
         <a href="#como-funciona">Cómo funciona</a>
         <a href="#tecnologia">Tecnología</a>
+        <a href="#calidad">Calidad</a>
         <a href="#precios">Precios</a>
         <a href="#ubicaciones">Ubicaciones</a>
         <a class="nav-cta" href="https://wa.me/595992269255?text=Hola%20YkuaPura%2C%20quiero%20hacer%20una%20consulta" target="_blank" rel="noopener">WhatsApp</a>
@@ -54,7 +56,7 @@
         </div>
         <div class="hero-visual reveal">
           <div class="image-shell image-shell-hero">
-            <img src="assets/IMG_6370.webp" alt="Máquina autoservice YkuaPura para recarga de agua purificada" />
+            <a href="assets/04-portada.webp" target="_blank" rel="noopener" aria-label="Ampliar: YkuaPura: calidad que se controla, no solo se promete"><img src="assets/04-portada.webp" srcset="assets/04-portada-800.webp 800w, assets/04-portada.webp 1254w" sizes="(max-width: 900px) 92vw, 560px" width="1254" height="1254" fetchpriority="high" decoding="async" alt="YkuaPura: calidad que se controla, no solo se promete" /></a>
           </div>
           <div class="floating-card fc-top"><span class="dot-live"></span><b>Disponible 24/7</b></div>
           <div class="floating-card fc-bottom"><small>RECARGA DE 20 L</small><b>5.000 Gs.</b></div>
@@ -122,29 +124,33 @@
           </div>
         </div>
         <div class="tech-visual reveal">
-          <div class="image-shell image-shell-dark"><img src="assets/IMG_6380.webp" alt="Interior de un equipo YkuaPura con componentes del sistema de tratamiento de agua" /></div>
+          <div class="image-shell image-shell-dark"><a href="assets/01-tecnologia.webp" target="_blank" rel="noopener" aria-label="Ampliar: Filtración, desinfección UV, ozono y control del proceso"><img src="assets/01-tecnologia.webp" srcset="assets/01-tecnologia-800.webp 800w, assets/01-tecnologia.webp 1254w" sizes="(max-width: 900px) 92vw, 560px" width="1254" height="1254" loading="lazy" decoding="async" alt="Filtración, desinfección UV, ozono y control del proceso" /></a></div>
           <span class="caption-chip">Sistema completo de tratamiento</span>
         </div>
       </div>
     </section>
 
     <section class="section-pad ozone-section">
-      <div class="container split-grid">
-        <div class="media-card reveal"><img src="assets/IMG_6368.webp" alt="Función de ozono para higienización del bidón en equipo YkuaPura" /></div>
+      <div class="container split-grid hygiene-grid">
         <div class="content-block reveal">
-          <span class="eyebrow"><i></i> Higiene del envase</span>
-          <h2>Ozono antes de cargar</h2>
-          <p>La función de ozono permite higienizar el bidón antes de llenarlo. Es una etapa práctica para complementar el cuidado del envase reutilizable.</p>
+          <span class="eyebrow"><i></i> Cuidamos cada detalle</span>
+          <h2>La confianza se demuestra con hechos.</h2>
+          <p>Cada semana limpiamos y desinfectamos el habitáculo donde se recargan los bidones de 20 litros. Cuidar ese espacio forma parte del cuidado de nuestras estaciones.</p>
+          <a class="btn btn-ghost" href="https://www.instagram.com/ykuapurapy/" target="_blank" rel="noopener">Conocé nuestro trabajo en Instagram ↗</a>
+        </div>
+        <div class="hygiene-panel reveal">
+          <span class="eyebrow"><i></i> Higiene y reutilización</span>
+          <h3>Un espacio cuidado para tu recarga</h3>
           <div class="benefit-list">
-            <div><span>✓</span><p><b>Higienización adicional</b><small>Ayuda a reducir microorganismos y residuos del envase.</small></p></div>
-            <div><span>✓</span><p><b>Sin productos perfumados</b><small>El proceso no busca agregar olor ni sabor al agua.</small></p></div>
-            <div><span>✓</span><p><b>Más vida útil del bidón</b><small>Reutilizar y cuidar el envase reduce descartables.</small></p></div>
+            <div><span>✓</span><p><b>Limpieza semanal</b><small>Limpieza y desinfección del habitáculo de recarga de bidones de 20 litros.</small></p></div>
+            <div><span>✓</span><p><b>Ozono antes de cargar</b><small>En los equipos con esta función, seguí las indicaciones para higienizar el envase antes de la recarga.</small></p></div>
+            <div><span>✓</span><p><b>Tu envase también importa</b><small>Traé tu bidón, termo o botella reutilizable limpio y en buenas condiciones.</small></p></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="quality-section section-pad">
+    <section class="quality-section section-pad" id="calidad">
       <div class="container quality-grid">
         <div class="quality-copy reveal">
           <span class="eyebrow eyebrow-light"><i></i> Calidad que se controla</span>
@@ -156,12 +162,23 @@
           </div>
           <p class="fineprint">Los resultados específicos corresponden a los puntos y fechas analizados. Para información vigente, consultá a YkuaPura.</p>
         </div>
-        <div class="quality-media reveal"><img src="assets/IMG_6371.webp" alt="Comunicación de análisis de calidad del agua YkuaPura" /></div>
+        <div class="quality-media reveal"><a href="assets/05-analisis.webp" target="_blank" rel="noopener" aria-label="Ampliar: Análisis fisicoquímicos y microbiológicos del agua de salida de máquina; imagen ilustrativa"><img src="assets/05-analisis.webp" srcset="assets/05-analisis-800.webp 800w, assets/05-analisis.webp 1254w" sizes="(max-width: 900px) 92vw, 560px" width="1254" height="1254" loading="lazy" decoding="async" alt="Análisis fisicoquímicos y microbiológicos del agua de salida de máquina; imagen ilustrativa" /></a></div>
+      </div>
+    </section>
+
+    <section class="section-pad reports-section" id="informes">
+      <div class="container">
+        <div class="section-heading reveal"><span class="eyebrow"><i></i> Transparencia</span><h2>Consultá los documentos disponibles</h2><p>Cada informe corresponde a una muestra y una fecha determinadas. Compartimos las páginas recibidas para que puedas consultar su alcance.</p></div>
+        <div class="report-grid">
+          <article class="report-card reveal"><span class="report-tag">SCIENCO · INFORME 2821</span><h3>Análisis fisicoquímico</h3><p>Muestra: agua de salida de máquina.<br>Fecha de análisis: <time datetime="2026-07-11">11/07/2026</time>.<br>Emisión: <time datetime="2026-07-23">23/07/2026</time>.</p><p class="report-scope">Página 1 de 2. Incluye resultados fisicoquímicos; la página microbiológica no está disponible aquí.</p><a class="btn btn-primary" href="assets/informe-scienco-2026-07-p1.jpeg" target="_blank" rel="noopener">Ver página del informe ↗</a></article>
+          <article class="report-card reveal"><span class="report-tag">LABORATORIO MÜLLER</span><h3>Datos de la muestra</h3><p>Punto: dispensador de Súper 6 Costanera, Encarnación.<br>Muestreo: <time datetime="2026-09-07">07/09/2026</time>, 12:00.</p><p class="report-scope">Página 1 de 2. Identifica la muestra; esta página no contiene los resultados del análisis.</p><a class="btn btn-primary" href="assets/informe-muller-2026-09-p1.jpeg" target="_blank" rel="noopener">Ver página del informe ↗</a></article>
+        </div>
+        <details class="campaign-results"><summary>Ver la comunicación de resultados microbiológicos de YkuaPura</summary><div class="campaign-body"><a href="assets/02-resultados.webp" target="_blank" rel="noopener" aria-label="Ampliar: Resultados microbiológicos comunicados por YkuaPura: ausencia de E. coli, coliformes totales, coliformes fecales y Pseudomonas aeruginosa"><img src="assets/02-resultados.webp" srcset="assets/02-resultados-800.webp 800w, assets/02-resultados.webp 1254w" sizes="(max-width: 900px) 92vw, 560px" width="1254" height="1254" loading="lazy" decoding="async" alt="Resultados microbiológicos comunicados por YkuaPura: ausencia de E. coli, coliformes totales, coliformes fecales y Pseudomonas aeruginosa" /></a><p>Esta pieza resume resultados comunicados por YkuaPura. Las páginas de informes disponibles arriba no incluyen los resultados microbiológicos que aparecen en ella. Consultá el informe completo del punto y la fecha de tu interés.</p></div></details>
       </div>
     </section>
 
     <section class="section-pad savings-section">
-      <div class="container split-grid reverse-mobile">
+      <div class="container savings-copy">
         <div class="content-block reveal">
           <span class="eyebrow"><i></i> Una forma distinta de comprar agua</span>
           <h2>Pagá por el agua.<br>No por otro envase.</h2>
@@ -171,7 +188,6 @@
             <div class="comparison-new"><span>Autoservice</span><b>Tu envase + tu cantidad + tu horario</b></div>
           </div>
         </div>
-        <div class="media-card reveal"><img src="assets/IMG_6379.webp" alt="Comparación entre compra de bidones tradicionales y recarga autoservice YkuaPura" /></div>
       </div>
     </section>
 
@@ -200,20 +216,22 @@
         </div>
         <div class="location-grid">
           <article class="location-card reveal">
-            <div class="location-pin">⌖</div><small>ENCARNACIÓN</small><h3>Super 6 Costanera</h3><p>Entrada lateral, al lado de la farmacia.</p>
+            <div class="location-pin">⌖</div><small>ENCARNACIÓN</small><h3>Súper 6 Costanera</h3><p>Entrada lateral, al lado de la farmacia.</p>
             <a href="https://www.google.com/maps/search/?api=1&query=Super+6+Costanera+Encarnacion+Paraguay" target="_blank" rel="noopener">Ver en Maps ↗</a>
           </article>
           <article class="location-card reveal">
-            <div class="location-pin">⌖</div><small>CIUDAD DEL ESTE</small><h3>Stock Área 1</h3><p>Frente al acceso principal.</p>
+            <div class="location-pin">⌖</div><small>CIUDAD DEL ESTE</small><h3>Stock Área 1</h3><p>Punto de recarga autoservice.</p>
             <a href="https://www.google.com/maps/search/?api=1&query=Stock+Area+1+Ciudad+del+Este+Paraguay" target="_blank" rel="noopener">Ver en Maps ↗</a>
           </article>
           <article class="location-card reveal">
-            <div class="location-pin">⌖</div><small>ASUNCIÓN</small><h3>Super 6 Los Laureles</h3><p>Punto de recarga en sucursal Los Laureles.</p>
+            <div class="location-pin">⌖</div><small>ASUNCIÓN</small><h3>Súper 6 Los Laureles</h3><p>Puerta principal.</p>
             <a href="https://www.google.com/maps/search/?api=1&query=Super+6+Los+Laureles+Asuncion+Paraguay" target="_blank" rel="noopener">Ver en Maps ↗</a>
           </article>
         </div>
       </div>
     </section>
+
+    <section class="locations-poster"><div class="container"><details><summary>Ver ubicaciones y disponibilidad 24 horas</summary><div class="locations-poster-image"><a href="assets/03-ubicaciones.webp" target="_blank" rel="noopener" aria-label="Ampliar: Ubicaciones YkuaPura en Encarnación, Ciudad del Este y Asunción"><img src="assets/03-ubicaciones.webp" srcset="assets/03-ubicaciones-800.webp 800w, assets/03-ubicaciones.webp 1254w" sizes="(max-width: 900px) 92vw, 560px" width="1254" height="1254" loading="lazy" decoding="async" alt="Ubicaciones YkuaPura en Encarnación, Ciudad del Este y Asunción" /></a></div></details></div></section>
 
     <section class="final-cta section-pad">
       <div class="container cta-box reveal">
@@ -229,7 +247,7 @@
         <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 64 76"><path d="M32 2C23 17 8 31 8 48c0 15 11 26 24 26s24-11 24-26C56 31 41 17 32 2Z" fill="#0d83c6"/><path d="M32 13c-4 8-13 18-13 29 0 9 6 16 13 16s13-7 13-16C45 31 36 21 32 13Z" fill="#76b82a"/><circle cx="32" cy="42" r="6" fill="#fff"/></svg></span>
         <span class="brand-type"><b>Ykua<span>Pura</span></b><small>AGUA PURA AL INSTANTE</small></span>
       </a>
-      <p>Agua purificada autoservice · Paraguay</p>
+      <p>Agua pura al instante, tu fuente de confianza. · Paraguay</p>
       <a href="https://www.instagram.com/ykuapurapy" target="_blank" rel="noopener">@ykuapurapy</a>
     </div>
   </footer>

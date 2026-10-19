@@ -1,0 +1,33 @@
+/* October 2026: full artwork, readable reports and station care. */
+section[id]{scroll-margin-top:95px}
+.image-shell-hero,.image-shell-dark{aspect-ratio:1;transform:none}
+.image-shell img,.quality-media img,.media-card img{aspect-ratio:1;height:auto;object-fit:contain}
+.image-shell-hero{border-width:6px}
+.floating-card{display:none}
+.hero-grid,.tech-grid,.quality-grid{gap:48px}
+.hygiene-panel{background:#f1f8fc;border:1px solid #dce8f3;border-radius:24px;padding:34px}
+.hygiene-panel h3{font-size:28px;line-height:1.15;color:var(--navy);margin:18px 0}
+.hygiene-panel .benefit-list small{font-size:14px}
+.reports-section{background:#f7fbff}
+.report-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.report-card{padding:32px;background:white;border:1px solid #dce8f3;border-radius:24px;display:flex;flex-direction:column;align-items:flex-start}
+.report-tag{font-size:11px;font-weight:800;letter-spacing:1.2px;color:#28628c}
+.report-card h3{color:var(--navy);font-size:27px;line-height:1.2;margin:16px 0 4px}
+.report-card p{color:#506279;font-size:15px}
+.report-card .report-scope{font-size:14px;background:#f0f6fa;padding:16px;border-radius:12px}
+.report-card .btn{margin-top:auto}
+summary{cursor:pointer;font-weight:750;line-height:1.5;padding:20px 24px}
+details{border:1px solid #cedeea;border-radius:18px;overflow:hidden}
+.campaign-results{margin-top:32px;background:#fff}
+.campaign-body{padding:0 24px 24px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:32px}
+.campaign-body p{color:#52677f;font-size:15px}
+.campaign-body img{height:auto;border-radius:14px}
+.savings-copy{max-width:860px}
+.savings-copy .content-block>p{max-width:760px}
+.locations-poster{background:#061a40;color:#d5e7f6;padding-bottom:52px}
+.locations-poster details{border-color:#28446a}
+.locations-poster-image{max-width:740px;margin:0 auto;padding:0 24px 24px}
+.locations-poster-image img{height:auto;border-radius:14px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #078bd0;outline-offset:5px}
+@media(max-width:1000px){.nav-links{gap:16px;font-size:13px}}
+@media(max-width:700px){.report-grid,.campaign-body{grid-template-columns:1fr}.report-card,.hygiene-panel{padding:24px}.campaign-body{gap:14px}.hero-grid,.tech-grid,.quality-grid{gap:32px}.comparison>div{align-items:flex-start;flex-direction:column;gap:5px}.report-card .btn{width:100%}.locations-poster-image{padding:0 12px 16px}}

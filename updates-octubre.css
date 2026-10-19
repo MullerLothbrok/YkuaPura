@@ -32,6 +32,19 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #07
 @media(max-width:1000px){.nav-links{gap:16px;font-size:13px}}
 @media(max-width:700px){.report-grid,.campaign-body{grid-template-columns:1fr}.report-card,.hygiene-panel{padding:24px}.campaign-body{gap:14px}.hero-grid,.tech-grid,.quality-grid{gap:32px}.comparison>div{align-items:flex-start;flex-direction:column;gap:5px}.report-card .btn{width:100%}.locations-poster-image{padding:0 12px 16px}}
 /* Language controls remain visible on small screens. */
+.location-card{padding:24px;display:flex;flex-direction:column;min-width:0}
+.locations-section .section-heading h2{color:#fff}
+.location-card h3{font-size:24px}
+.location-card>p{margin-bottom:20px}
+.location-map{display:block;width:100%;height:260px;border:0;border-radius:14px;background:#e8eef3}
+.map-actions{display:flex;flex-direction:column;align-items:stretch;gap:10px;margin-top:18px}
+.location-card .map-actions a{margin:0;min-height:44px;display:flex;align-items:center;justify-content:center;text-align:center;border-radius:10px;padding:9px 12px}
+.location-card .map-directions{background:#fff;color:#071f4d}
+.location-card .map-directions:hover{background:#d9f3ff;color:#071f4d}
+.map-actions a:focus-visible{outline-color:#90ddff}
+.locations-section .section-heading .maps-note{font-size:13px;color:#abc6df;margin-top:14px}
+@media(max-width:900px){.location-map{height:280px}.map-actions{flex-direction:row}.map-actions a{flex:1}}
+@media(max-width:380px){.map-actions{flex-direction:column}.location-card{padding:20px}}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .language-picker{order:2;margin-left:20px;flex-shrink:0}
 .language-picker select{font:inherit;font-size:13px;font-weight:700;color:var(--navy);background:#f5f9fc;border:1px solid #cbdceb;border-radius:10px;padding:10px 8px;max-width:152px;min-height:44px;cursor:pointer}

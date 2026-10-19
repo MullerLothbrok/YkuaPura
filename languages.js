@@ -3,6 +3,12 @@
 (() => {
   'use strict';
   const copy = [
+    ['Cómo llegar ↗', 'Como chegar ↗', 'Get directions ↗'],
+    ['Ver mapa completo ↗', 'Ver mapa completo ↗', 'View full map ↗'],
+    ['Los mapas indican el supermercado donde se encuentra cada punto de recarga.', 'Os mapas indicam o supermercado onde fica cada ponto de abastecimento.', 'The maps show the supermarket where each refill station is located.'],
+    ['Mapa de Súper 6 Costanera, Encarnación', 'Mapa do Súper 6 Costanera, Encarnación', 'Map of Súper 6 Costanera, Encarnación'],
+    ['Mapa de Stock Área 1, Ciudad del Este', 'Mapa do Stock Área 1, Ciudad del Este', 'Map of Stock Área 1, Ciudad del Este'],
+    ['Mapa de Súper 6 Los Laureles, Asunción', 'Mapa do Súper 6 Los Laureles, Asunción', 'Map of Súper 6 Los Laureles, Asunción'],
     ['Idioma', 'Idioma', 'Language'],
     ['AGUA PURA AL INSTANTE', 'ÁGUA PURA NA HORA', 'PURE WATER IN AN INSTANT'],
     ['Agua pura al instante', 'Água pura na hora', 'Pure water in an instant'],
@@ -152,8 +158,8 @@
     if (translations.has(node.textContent.trim())) textNodes.push([node, node.textContent]);
   }
   const attributes = [];
-  document.querySelectorAll('[aria-label], [alt], meta[name="description"], meta[property="og:title"], meta[property="og:description"]').forEach(el => {
-    ['aria-label', 'alt', 'content'].forEach(attr => {
+  document.querySelectorAll('[aria-label], [alt], iframe[title], meta[name="description"], meta[property="og:title"], meta[property="og:description"]').forEach(el => {
+    ['aria-label', 'alt', 'content', 'title'].forEach(attr => {
       if (el.hasAttribute(attr)) attributes.push([el, attr, el.getAttribute(attr)]);
     });
   });
